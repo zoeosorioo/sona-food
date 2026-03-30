@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Sona Food</title>
+
 <style>
 body {
   margin: 0;
@@ -12,10 +13,10 @@ body {
 }
 
 header {
-  background: #ff4d4d;
-  padding: 20px;
+  background: linear-gradient(45deg, #ff4d4d, #ff914d);
+  padding: 25px;
   text-align: center;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -25,15 +26,21 @@ header {
 
 .card {
   background: #1a1a1a;
-  margin: 15px 0;
+  margin: 20px 0;
   padding: 15px;
   border-radius: 15px;
   text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .price {
   color: #00ffae;
-  font-size: 20px;
+  font-size: 22px;
   margin: 10px 0;
 }
 
@@ -45,6 +52,21 @@ header {
   border-radius: 10px;
   text-decoration: none;
   margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #1ebe5d;
+}
+
+.tag {
+  background: gold;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -63,27 +85,33 @@ header {
 <div class="container">
 
   <div class="card">
+    <img src="quesillo.jpg">
+    <div class="tag">🔥 Popular</div>
     <h2>🧀 Quesillo</h2>
     <p class="price">Q25</p>
-    <a class="btn" href="https://wa.me/50231455366?text=Quiero%20un%20quesillo">Pedir</a>
+    <a class="btn" href="https://wa.me/50231455366?text=Quiero%20un%20quesillo">Pedir por WhatsApp</a>
   </div>
 
   <div class="card">
+    <img src="hamburguesa.jpg">
+    <div class="tag">⭐ Más vendido</div>
     <h2>🍔 Hamburguesa</h2>
     <p class="price">Q35</p>
-    <a class="btn" href="https://wa.me/50231455366?text=Quiero%20una%20hamburguesa">Pedir</a>
+    <a class="btn" href="https://wa.me/50231455366?text=Quiero%20una%20hamburguesa">Pedir por WhatsApp</a>
   </div>
 
   <div class="card">
+    <img src="ramen.jpg">
     <h2>🍜 Ramen</h2>
     <p class="price">Q40</p>
-    <a class="btn" href="https://wa.me/50231455366?text=Quiero%20un%20ramen">Pedir</a>
+    <a class="btn" href="https://wa.me/50231455366?text=Quiero%20un%20ramen">Pedir por WhatsApp</a>
   </div>
 
 </div>
 
 <div class="footer">
-  Pedidos por WhatsApp 📲 +502 3145 5366
+  📲 Pedidos: +502 3145 5366 <br>
+  🚚 Delivery disponible
 </div>
 
 </body>
