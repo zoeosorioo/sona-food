@@ -1,44 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Sona Food</title>
-  <style>
-    body {
-      font-family: Arial;
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 40px;
-    }
-    h1 {
-      color: #ff4d4d;
-    }
-    .menu {
-      margin: 20px 0;
-      font-size: 20px;
-    }
-    a {
-      background: #25D366;
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      border-radius: 10px;
-      font-size: 18px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Sona Food</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f0f0f;
+  color: white;
+}
+
+header {
+  background: #ff4d4d;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.price {
+  color: #00ffae;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: gray;
+}
+</style>
 </head>
+
 <body>
 
-  <h1>🍽️ Sona Food</h1>
+<header>🍽️ Sona Food</header>
 
-  <div class="menu">
-    <p>🧀 Quesillo</p>
-    <p>🍔 Hamburguesas</p>
-    <p>🍜 Ramen</p>
+<div class="container">
+
+  <div class="card">
+    <h2>🧀 Quesillo</h2>
+    <p class="price">Q25</p>
+    <a class="btn" href="https://wa.me/50231455366?text=Quiero%20un%20quesillo">Pedir</a>
   </div>
 
-  <a href="https://wa.me/50231455366">Pedir por WhatsApp</a>
+  <div class="card">
+    <h2>🍔 Hamburguesa</h2>
+    <p class="price">Q35</p>
+    <a class="btn" href="https://wa.me/50231455366?text=Quiero%20una%20hamburguesa">Pedir</a>
+  </div>
+
+  <div class="card">
+    <h2>🍜 Ramen</h2>
+    <p class="price">Q40</p>
+    <a class="btn" href="https://wa.me/50231455366?text=Quiero%20un%20ramen">Pedir</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  Pedidos por WhatsApp 📲 +502 3145 5366
+</div>
 
 </body>
 </html>
